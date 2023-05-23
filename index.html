@@ -9,18 +9,58 @@
 <body>
      <header class="header">
         <div class="container">
-            
+            <img class="header__logo" src="img/logo.svg" alt="логотип сервиса в виде буквы W">
+
+            <nav class="header__nav nav">
+                <button class="nav__btn btn">Зарегистрироваться</button>
+                <button class="nav__btn btn">Войти</button>
+            </nav>
+
+            <button class="header__burger burger">
+                <span class="burger__line"></span>
+            </button>
         </div>
      </header>
 
      <main class="app">
-        <section class="hero"></section>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">WishList</h1>
 
-        <section class="wishlist"></section>
+                <p class="hero__description">Никогда не&nbsp;поздно поставить новую цель или обрести новую мечту... </p>
+                
+                <ol class="hero__steps">
+                    <li class="steps__item">создайте список желаний</li>
+                    <li class="steps__item">Поделитесь ссылкой с&nbsp;друзьями</li>
+                    <li class="steps__item">Получите желанный подарок</li>
+                </ol>
+            </div>
+        </section>
 
-        <section class="edit edit_profile"></section>
+        <section class="wishlist">
+            <div class="container">
+                <div class="wishlist__profile profile">
+                    <img class="profile__avatar" src="img/avatar.png" alt="фото пользователя">
+                    
+                    <div class="profile__content">
+                        <h2 class="profile__fullname">Иван Петров</h2>
 
-        <section class="edit edit_wish"></section>
+                        <p class="profile__birthday">15 июля исполнится 55 лет</p>
+
+                        <button class="profile__edit">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.56311 24.2731L3.41667 24.4196V24.6267V26.0834V26.5834H3.91667H5.37333H5.58044L5.72689 26.4369L20.0719 12.0919L20.4254 11.7384L20.0719 11.3848L18.6152 9.92814L18.2617 9.57458L17.9081 9.92814L3.56311 24.2731ZM24.7319 1.56238L24.7323 1.56274L28.4373 5.26774L28.4376 5.26811C28.5379 5.36814 28.6174 5.48697 28.6717 5.61778C28.7259 5.74859 28.7539 5.88882 28.7539 6.03044C28.7539 6.17206 28.7259 6.31229 28.6717 6.4431C28.6174 6.57391 28.5379 6.69274 28.4376 6.79278L28.4373 6.79314L25.8933 9.33708L20.6629 4.10669L23.2069 1.56274L23.2072 1.56238C23.3073 1.46214 23.4261 1.38261 23.5569 1.32835C23.6877 1.27409 23.828 1.24615 23.9696 1.24615C24.1112 1.24615 24.2514 1.27409 24.3822 1.32835C24.5131 1.38261 24.6319 1.46214 24.7319 1.56238ZM23.4921 11.7384L6.48039 28.75H1.25V23.5196L18.2617 6.50796L23.4921 11.7384Z" fill="white" stroke="black"/>
+                            </svg>
+                            редактировать профиль
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="edit edit_sprofile"></section>
+
+        <section class="edit edit_swish"></section>
         
         <div class="modal"></div>
      </main>
